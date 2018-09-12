@@ -5,19 +5,19 @@
   
 
   
-  <title>pyschools tic-tac-toe | XY&amp;YZ</title>
+  <title>pyschools:tic-tac-toe | XY&amp;YZ</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Solution 1:12345678910111213141516def tictactoe(moves):     for m in range(0, 3):        if moves[0][m] == moves[1][m] == moves[2][m] == &quot;X&quot;:            return &quot;&apos;X&apos; wins (vertical).&quot;        if moves[0">
+  <meta name="description" content="Solution 1:using 2d list12345678910111213141516def tictactoe(moves):     for m in range(0, 3):        if moves[0][m] == moves[1][m] == moves[2][m] == &quot;X&quot;:            return &quot;&apos;X&apos; wins (vertical).&quot;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="pyschools tic-tac-toe">
+<meta property="og:title" content="pyschools:tic-tac-toe">
 <meta property="og:url" content="http://jxy859.github.io/2018/09/12/tic-tac-toe/index.html">
 <meta property="og:site_name" content="XY&amp;YZ">
-<meta property="og:description" content="Solution 1:12345678910111213141516def tictactoe(moves):     for m in range(0, 3):        if moves[0][m] == moves[1][m] == moves[2][m] == &quot;X&quot;:            return &quot;&apos;X&apos; wins (vertical).&quot;        if moves[0">
+<meta property="og:description" content="Solution 1:using 2d list12345678910111213141516def tictactoe(moves):     for m in range(0, 3):        if moves[0][m] == moves[1][m] == moves[2][m] == &quot;X&quot;:            return &quot;&apos;X&apos; wins (vertical).&quot;">
 <meta property="og:locale" content="English & Chinese">
-<meta property="og:updated_time" content="2018-09-12T11:37:50.000Z">
+<meta property="og:updated_time" content="2018-09-12T14:33:40.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="pyschools tic-tac-toe">
-<meta name="twitter:description" content="Solution 1:12345678910111213141516def tictactoe(moves):     for m in range(0, 3):        if moves[0][m] == moves[1][m] == moves[2][m] == &quot;X&quot;:            return &quot;&apos;X&apos; wins (vertical).&quot;        if moves[0">
+<meta name="twitter:title" content="pyschools:tic-tac-toe">
+<meta name="twitter:description" content="Solution 1:using 2d list12345678910111213141516def tictactoe(moves):     for m in range(0, 3):        if moves[0][m] == moves[1][m] == moves[2][m] == &quot;X&quot;:            return &quot;&apos;X&apos; wins (vertical).&quot;">
   
     <link rel="alternate" href="/atom.xml" title="XY&amp;YZ" type="application/atom+xml">
   
@@ -71,7 +71,7 @@
         <section id="main"><article id="post-tic-tac-toe" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/09/12/tic-tac-toe/" class="article-date">
-  <time datetime="2018-09-12T11:37:50.000Z" itemprop="datePublished">2018-09-12</time>
+  <time datetime="2018-09-12T14:33:40.000Z" itemprop="datePublished">2018-09-12</time>
 </a>
     
   </div>
@@ -82,7 +82,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      pyschools tic-tac-toe
+      pyschools:tic-tac-toe
     </h1>
   
 
@@ -90,12 +90,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="Solution-1"><a href="#Solution-1" class="headerlink" title="Solution 1:"></a>Solution 1:</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">tictactoe</span><span class="params">(moves)</span>:</span> </span><br><span class="line">    <span class="keyword">for</span> m <span class="keyword">in</span> range(<span class="number">0</span>, <span class="number">3</span>):</span><br><span class="line">        <span class="keyword">if</span> moves[<span class="number">0</span>][m] == moves[<span class="number">1</span>][m] == moves[<span class="number">2</span>][m] == <span class="string">"X"</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="string">"'X' wins (vertical)."</span></span><br><span class="line">        <span class="keyword">if</span> moves[<span class="number">0</span>][m] == moves[<span class="number">1</span>][m] == moves[<span class="number">2</span>][m] == <span class="string">"O"</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="string">"'O' wins (vertical)."</span></span><br><span class="line">    <span class="keyword">for</span> result <span class="keyword">in</span> moves:</span><br><span class="line">        <span class="keyword">if</span> result == (<span class="string">"X"</span>, <span class="string">"X"</span>, <span class="string">"X"</span>):</span><br><span class="line">           <span class="keyword">return</span> <span class="string">"'X' wins (horizontal)."</span></span><br><span class="line">        <span class="keyword">if</span> result == (<span class="string">"O"</span>, <span class="string">"O"</span>, <span class="string">"O"</span>): <span class="comment">#注意这里为什么可以用if替代elif</span></span><br><span class="line">           <span class="keyword">return</span> <span class="string">"'O' wins (horizontal)."</span></span><br><span class="line">    <span class="keyword">if</span> moves[<span class="number">0</span>][<span class="number">0</span>] == moves[<span class="number">1</span>][<span class="number">1</span>] == moves[<span class="number">2</span>][<span class="number">2</span>] == <span class="string">"X"</span> <span class="keyword">or</span> moves[<span class="number">2</span>][<span class="number">0</span>] == moves[<span class="number">1</span>][<span class="number">1</span>] == moves[<span class="number">0</span>][<span class="number">2</span>] == <span class="string">"X"</span>:</span><br><span class="line">       <span class="keyword">return</span> <span class="string">"'X' wins (diagonal)."</span></span><br><span class="line">    <span class="keyword">if</span> moves[<span class="number">0</span>][<span class="number">0</span>] == moves[<span class="number">1</span>][<span class="number">1</span>] == moves[<span class="number">2</span>][<span class="number">2</span>] == <span class="string">"O"</span> <span class="keyword">or</span> moves[<span class="number">2</span>][<span class="number">0</span>] == moves[<span class="number">1</span>][<span class="number">1</span>] == moves[<span class="number">0</span>][<span class="number">2</span>] == <span class="string">"O"</span>:</span><br><span class="line">       <span class="keyword">return</span> <span class="string">"'O' wins (diagonal)."</span></span><br><span class="line">    <span class="keyword">return</span> <span class="string">'Draw.'</span></span><br></pre></td></tr></table></figure>
+        <h3 id="Solution-1"><a href="#Solution-1" class="headerlink" title="Solution 1:"></a>Solution 1:</h3><p>using 2d list<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">tictactoe</span><span class="params">(moves)</span>:</span> </span><br><span class="line">    <span class="keyword">for</span> m <span class="keyword">in</span> range(<span class="number">0</span>, <span class="number">3</span>):</span><br><span class="line">        <span class="keyword">if</span> moves[<span class="number">0</span>][m] == moves[<span class="number">1</span>][m] == moves[<span class="number">2</span>][m] == <span class="string">"X"</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="string">"'X' wins (vertical)."</span></span><br><span class="line">        <span class="keyword">if</span> moves[<span class="number">0</span>][m] == moves[<span class="number">1</span>][m] == moves[<span class="number">2</span>][m] == <span class="string">"O"</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="string">"'O' wins (vertical)."</span></span><br><span class="line">    <span class="keyword">for</span> result <span class="keyword">in</span> moves:</span><br><span class="line">        <span class="keyword">if</span> result == (<span class="string">"X"</span>, <span class="string">"X"</span>, <span class="string">"X"</span>):</span><br><span class="line">           <span class="keyword">return</span> <span class="string">"'X' wins (horizontal)."</span></span><br><span class="line">        <span class="keyword">if</span> result == (<span class="string">"O"</span>, <span class="string">"O"</span>, <span class="string">"O"</span>): <span class="comment">#注意这里为什么可以用if替代elif</span></span><br><span class="line">           <span class="keyword">return</span> <span class="string">"'O' wins (horizontal)."</span></span><br><span class="line">    <span class="keyword">if</span> moves[<span class="number">0</span>][<span class="number">0</span>] == moves[<span class="number">1</span>][<span class="number">1</span>] == moves[<span class="number">2</span>][<span class="number">2</span>] == <span class="string">"X"</span> <span class="keyword">or</span> moves[<span class="number">2</span>][<span class="number">0</span>] == moves[<span class="number">1</span>][<span class="number">1</span>] == moves[<span class="number">0</span>][<span class="number">2</span>] == <span class="string">"X"</span>:</span><br><span class="line">       <span class="keyword">return</span> <span class="string">"'X' wins (diagonal)."</span></span><br><span class="line">    <span class="keyword">if</span> moves[<span class="number">0</span>][<span class="number">0</span>] == moves[<span class="number">1</span>][<span class="number">1</span>] == moves[<span class="number">2</span>][<span class="number">2</span>] == <span class="string">"O"</span> <span class="keyword">or</span> moves[<span class="number">2</span>][<span class="number">0</span>] == moves[<span class="number">1</span>][<span class="number">1</span>] == moves[<span class="number">0</span>][<span class="number">2</span>] == <span class="string">"O"</span>:</span><br><span class="line">       <span class="keyword">return</span> <span class="string">"'O' wins (diagonal)."</span></span><br><span class="line">    <span class="keyword">return</span> <span class="string">'Draw.'</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="Solution-2"><a href="#Solution-2" class="headerlink" title="Solution 2:"></a>Solution 2:</h3><p>using 1d list</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://jxy859.github.io/2018/09/12/tic-tac-toe/" data-id="cjlz2xo4g00013hw7f5tab9qm" class="article-share-link">Share</a>
+      <a data-url="http://jxy859.github.io/2018/09/12/tic-tac-toe/" data-id="cjlz8woum0000j5w7g1rfkhf3" class="article-share-link">Share</a>
       
       
     </footer>
@@ -144,7 +145,7 @@
       <ul>
         
           <li>
-            <a href="/2018/09/12/tic-tac-toe/">pyschools tic-tac-toe</a>
+            <a href="/2018/09/12/tic-tac-toe/">pyschools:tic-tac-toe</a>
           </li>
         
           <li>
